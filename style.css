@@ -1,0 +1,147 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e Navegação */
+#Cabecalho {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 3px solid #e11d21;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+    
+    display: flex;
+    flex-direction: column; /* Faz os itens ficarem um embaixo do outro */
+    align-items: center;    /* Centraliza horizontalmente todos os filhos */
+    justify-content: center;
+    gap: 15px;
+}
+
+#Cabecalho p {
+    margin: 0;
+}
+
+#Cabecalho a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+#Cabecalho a:hover {
+    color: #e11d21;
+}
+
+/* Container Principal */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Estilização das Seções */
+section {
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+h1 {
+    color: #0073b7; /* Azul clássico */
+    margin-bottom: 15px;
+    border-left: 5px solid #e11d21;
+    padding-left: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Vídeo Responsivo */
+#Vídeo {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#Vídeo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+a {
+    color: #0073b7; 
+    text-decoration: none; /* Tira o sublinhado padrão */
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #e11d21; /* Muda para o vermelho Java quando passa o mouse */
+    border-bottom: 1px solid #e11d21;
+}
+
+#codigo {
+    background-color: #1e1e1e; /* Fundo cinza escuro clássico de editor */
+    color: #d4d4d4;           /* Cor do texto suave */
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 1.1rem;        /* Aumentamos um pouco para facilitar a leitura */
+    line-height: 1.5;
+    
+    /* Detalhes de design */
+    border-left: 8px solid #e11d21; /* Barra lateral vermelha Java */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    overflow-x: auto;          /* Garante que o código não quebre em telas pequenas */
+    position: relative;
+}
+
+/* Efeito de "janela" de código (opcional) */
+#codigo::before {
+    content: "● ● ●";
+    display: block;
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+

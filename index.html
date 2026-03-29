@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imagens/icons8-logo-java-coffee-cup-48.png">
+</head>
+<body>
+
+    <header id="Cabecalho">
+    <p><img src="imagens/java-logo.webp" alt="Java Logo" width="200"></p>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Instalação</a>
+        <a href="#">Notícias</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Códigos</a>
+    </nav>
+</header>
+
+    <main>
+        <section class = "principal">
+            <article>
+                <h1>A história da linguagem Java </h1>
+                <h2>☕ A Odisséia do Java: Do Micro-ondas para o Mundo!</h2>
+                <p>Imagine que estamos em 1991, nos escritórios da Sun Microsystems. Um time de elite, o Green Team, liderado pelo lendário <strong><a href="https://pt.wikipedia.org/wiki/James_Gosling" target="_blank">James Gosling</a></strong>, tinha um desafio bizarro: criar uma linguagem para dispositivos inteligentes (como televisões e... acredite se quiser, micro-ondas!). Eles queriam algo que não quebrasse a cabeça do programador com gerenciamento de memória manual.
+                Assim nasceu o Oak (Carvalho), batizado em homenagem a uma árvore que ficava na frente da janela do Gosling. Mas, como o nome já estava registrado, eles se reuniram em uma cafeteria e, entre um gole e outro de café vindo da ilha de Java, o nome perfeito surgiu!
+                O grande 'pulo do gato' veio em 1995 com o lema: <strong>'Write Once, Run Anywhere'</strong> (Escreva uma vez, rode em qualquer lugar). Enquanto outras linguagens precisavam ser reescritas para cada sistema, o Java introduziu a JVM (Java Virtual Machine), que funciona como um tradutor universal. O Java não apenas sobreviveu à bolha da internet, como se tornou a espinha dorsal de bancos, sistemas governamentais, missões da NASA e, claro, do nosso querido Android. É uma linguagem que nasceu para eletrodomésticos, mas acabou dominando o planeta!</p>
+
+                <img src="imagens/James_Gosling.webp" alt="Imagem de James Gosling">
+            </article>
+        </section>
+
+        <section class = "principal">
+            <article>
+                <h1> Por que Java?</h1>
+                <p>Você já parou para pensar no que acontece quando você faz um PIX, usa um aplicativo de banco ou até mesmo quando a NASA envia um robô para Marte? Grande parte dessa 'mágica' acontece graças ao Java! Mas por que, entre tantas linguagens, o Java continua sendo a escolha número um das maiores empresas do planeta?
+                A resposta curta é: Confiança. O Java foi construído sob o lema 'Write Once, Run Anywhere' (Escreva uma vez, execute em qualquer lugar). Isso é possível graças à poderosa <strong>JVM (Java Virtual Machine)</strong>. Pense nela como um tradutor universal de elite: você escreve seu código uma vez e a JVM garante que ele rode perfeitamente em um supercomputador, em um servidor na nuvem ou até no seu celular Android, sem que você precise mudar uma única linha!
+                Além disso, o Java é como um 'carro blindado' da programação. Ele possui um sistema de segurança rigoroso e o famoso <strong>Garbage Collector</strong>, que limpa a memória do sistema automaticamente para você (adeus, vazamentos de memória chatos!). Com uma comunidade de milhões de desenvolvedores e bibliotecas para absolutamente tudo — de Inteligência Artificial a Big Data — aprender Java não é apenas aprender uma linguagem, é ganhar uma chave mestra para o mercado de tecnologia!</p>
+
+                <img src="imagens/java-jvm.webp" alt="Imagem JVM">
+            </article>
+        </section>
+
+        <section class = "principal">
+            <article>
+                <h1>Códigos em Java</h1>
+                <p>Se você já olhou para um código Java e pensou: 'Nossa, precisa de tudo isso só para imprimir um texto?', você não está sozinho! O Java é conhecido por ser uma <strong>linguagem verbosa</strong>. Mas calma, isso não é um defeito, é uma escolha de design!
+                Diferente de linguagens que tentam ser 'mágicas' ou ultra-curtas, o Java prefere ser explícito. Onde outras linguagens escondem o que está acontecendo, o Java diz exatamente o que cada peça faz. Isso é o que chamamos de tipagem estática e forte. Se algo é um número inteiro, o Java quer que você declare isso com todas as letras.
+                Essa verbosidade tem um propósito nobre:<strong> Manutenibilidade</strong>. Em grandes sistemas (como os que você encontra no TJRJ ou em grandes bancos), um código que 'fala muito' é muito mais fácil de ser lido e corrigido por outro programador meses depois. No Java, você não precisa adivinhar o que uma variável faz; o código te conta a história completa!</p>
+                <h2 id = "Secundario">Hello World</h2>
+                    <p>Veja como a estrutura do Java é organizada. Tudo precisa estar dentro de uma classe!</p>
+                        <pre id = "codigo">
+                            <code>
+                public class HelloWorld {
+                    public static void main(String[] args) {     
+                        System.out.println("Hello, Java World!");
+                    }
+                }
+                        </code>
+                        </pre>
+            </article>
+        </section>
+        
+        <section>
+            <article>
+                <h1>Por onde aprender ?</h1>
+                <p>Se você está buscando uma base sólida e não quer apenas copiar código sem entender o que está acontecendo nos bastidores, o canal Curso em Vídeo é o seu destino obrigatório. Com uma didática lendária, o professor <strong>Gustavo Guanabara</strong> desmistifica o Java desde os seus conceitos mais fundamentais até a complexidade da Orientação a Objetos. O curso é famoso por 'pegar na mão' do aluno, explicando detalhadamente como configurar o ambiente, como a JVM processa cada linha e, principalmente, como pensar como um programador. É o ponto de partida ideal para quem quer dominar a linguagem que move o mercado, com a garantia de um conteúdo gratuito, em português e de altíssima qualidade. Dê o play e prepare-se para se tornar um verdadeiro 'Gafanhoto' do Java!</p>
+
+                <div id = "Vídeo"> <iframe src="https://www.youtube.com/embed/ZBKxhnqX-Q0?si=dmIE02WkoWPqcud3" title="Curso de Java - Gustavo Guanabara" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/JP-rocha23" target="_blank">João Pedro Rocha</a></p>
+    </footer>
+    
+</body>
+</html>
