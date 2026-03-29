@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalação Java</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type = "image/png" href="imagens/icons8-logo-java-coffee-cup-48.png">
+</head>
+<body>
+
+    <header id="Cabecalho">
+        <p><img src="imagens/java-logo.webp" alt="Java Logo" width="200"></p>
+    
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="instalacao.html">Instalação</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="frameworks.html">Frameworks</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class = "principal">
+            <article>
+                <h1>Como instalar?</h1>
+                <p>Para começar a desenvolver em Java, o primeiro passo é configurar o ambiente corretamente em sua máquina. Isso envolve a instalação do <strong>JDK (Java Development Kit)</strong>, que é o conjunto de ferramentas essencial para criar e executar aplicações. Dependendo do seu sistema operacional e do objetivo do seu projeto, você pode optar por diferentes versões, como as LTS (Long Term Support) para maior estabilidade. Abaixo, preparamos um guia prático para te ajudar a configurar tudo, desde o download até o primeiro comando no terminal.</p>
+
+                <article>
+                    <p>
+                        Para começar a desenvolver em Java, o primeiro passo é configurar o ambiente corretamente...
+                    </p>
+
+                    <h2>1. Escolhendo a Versão (JDK)</h2>
+                    <p>
+                        Recomendamos o uso de uma versão <strong>LTS (Long Term Support)</strong>, como o Java 17 ou 21, pois oferecem maior estabilidade e suporte a longo prazo para seus projetos.</p>
+
+                    <h2>2. Download e Instalação</h2>
+                    <p>
+                        Acesse o site oficial da Oracle ou o Adoptium (OpenJDK) e baixe o instalador correspondente ao 
+                        seu sistema operacional (Windows, macOS ou Linux).</p>
+                    <p>
+    🔗                  <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank" rel="noopener">Clique aqui para baixar o JDK oficial</a>
+
+                    <h2>3. Variáveis de Ambiente</h2>
+                    <p>
+                        No Windows, é essencial configurar o JAVA_HOME e adicionar o caminho da pasta bin ao seu <strong>Path</strong> para que o sistema reconheça os comandos do Java.</p>
+
+                    <h2>4. Verificação no Terminal</h2>
+                    <p>
+                        Abra o seu terminal (CMD ou PowerShell) e digite o seguinte comando para confirmar:</p>
+                    <pre id = codigo>
+                        <code>java -version</code></pre>
+                </article>
+            </article>
+        </section>
+
+        <section class = "principal">
+            <article>
+                <h1>Qual Ambiente de Desenvovimento usar?</h1>
+                <p>Imagine que você é um carpinteiro. Você poderia tentar construir um móvel usando apenas uma faca e um martelo, mas seria muito mais difícil e demorado. Agora, imagine que você tem uma oficina completa, com serras elétricas automáticas, lixadeiras precisas e uma bancada que organiza suas ferramentas sozinha. Na programação, as IDEs são essa oficina. Elas não servem apenas para escrever código, mas também para te ajudar a encontrar erros, sugerir melhorias e organizar projetos gigantescos de forma automática.</p>
+
+                <h2>O que é uma IDE?</h2>
+                    <p>
+                        IDE significa <em>Integrated Development Environment</em>. É um software que combina ferramentas essenciais como editor de texto, compilador e debugger em um só lugar, facilitando a vida do programador e aumentando a produtividade. Em <strong>Java</strong>, as duas mais utilizadas são: Eclipse IDE e IntelliJ IDEA.
+                    </p>
+
+                    <h2>Eclipse IDE: O Clássico Robusto</h2>
+                    <p>
+                        O <strong>Eclipse</strong> é um veterano no mundo Java. Totalmente gratuito e de código aberto, ele é conhecido por sua versatilidade e pelo vasto ecossistema de plugins. É uma ferramenta muito 
+                        utilizada em ambientes corporativos e acadêmicos. <a href="https://www.eclipse.org/downloads/packages/" target="_blank" class="btn-download eclipse"> Baixar Eclipse IDE </a></p>
+
+                    <ul>
+                        <li><strong>Vantagens:</strong> Gratuito, leve para rodar projetos menores e altamente customizável.</li>
+                        <li><strong>Desvantagens:</strong> A interface pode parecer um pouco datada e a configuração de plugins às vezes é complexa.</li>
+                    </ul>
+
+                <h2>IntelliJ IDEA: O Assistente Inteligente</h2>
+                    <p>
+                        Criado pela JetBrains, o <strong>IntelliJ</strong> é hoje o favorito da maioria dos desenvolvedores. Seu grande diferencial é a "inteligência": ele entende o seu código tão bem que prevê o que você vai escrever, sugere refatorações e encontra erros antes mesmo de você tentar rodar o programa.
+                    <a href="https://www.jetbrains.com/idea/download/" target="_blank" class="btn-download intellij"> Baixar IntelliJ IDEA (Community)</a></p>
+            
+                    <ul>
+                        <li><strong>Vantagens:</strong> Sugestões de código incríveis, interface moderna e ferramentas de produtividade integradas.</li>
+                        <li><strong>Desvantagens:</strong> Consome mais memória RAM e a versão mais completa (Ultimate) é paga.</li>
+                    </ul>
+
+
+                <h2>Qual escolher?</h2>
+                    <table>
+                        <tr>
+                            <th>Situação</th>
+                            <th>Melhor Escolha</th>
+                        </tr>
+                        <tr>
+                            <td>Computadores com menos RAM</td>
+                            <td>Eclipse</td>
+                        </tr>
+                        <tr>
+                            <td>Produtividade e agilidade no dia a dia</td>
+                            <td>IntelliJ</td>
+                        </tr>
+                        <tr>
+                            <td>Uso totalmente gratuito (Open Source)</td>
+                            <td>Eclipse ou IntelliJ (Community)</td>
+                        </tr>
+                    </table>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/JP-rocha23" target="_blank">João Pedro Rocha</a></p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frameworks em Java</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type = "image/png" href="imagens/icons8-logo-java-coffee-cup-48.png">
+</head>
+
+<body>
+    <header id="Cabecalho">
+        <p><img src="imagens/java-logo.webp" alt="Java Logo" width="200"></p>
+    
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="instalacao.html">Instalação</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="frameworks.html">Frameworks</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class = "principal">
+            <article>
+            <h1>O que é um Framework?</h1>
+                <p>
+                    Imagine que você quer montar uma peça de teatro. Você tem duas opções: 
+                    comprar um terreno vazio, construir o prédio, instalar as luzes, fabricar as cadeiras e depois escrever a peça... 
+                    ou alugar um <strong>teatro pronto</strong>.
+                </p>
+                <p>
+                    O <strong>Framework</strong> é esse teatro. Ele já vem com o palco montado, o sistema de som configurado e 
+                    as poltronas no lugar. Você não precisa se preocupar com a estrutura básica de como um prédio funciona; 
+                    seu único trabalho é chegar com os atores (seu código) e dirigir a cena (sua lógica de negócio).
+                </p>
+
+                <h2>Framework vs. Biblioteca: Qual a diferença?</h2>
+                <p>
+                    Muitas vezes esses nomes se confundem, mas a diferença está no "comando". 
+                    Uma <strong>Biblioteca</strong> é como uma caixa de ferramentas: você decide quando pegar a chave de fenda 
+                    para apertar um parafuso. Você está no controle total.
+                </p>
+                <p>
+                    Já no <strong>Framework</strong>, ocorre o que chamamos de <strong>Inversão de Controle (IoC)</strong>. 
+                    É ele quem dita as regras: "Se você colocar seu código aqui, eu o executarei quando a cortina abrir". 
+                    O framework fornece o esqueleto, e você apenas preenche os espaços em branco.
+                </p>
+
+                <h2>Por que usamos Frameworks?</h2>
+                <ul>
+                    <li><strong>Produtividade:</strong> Você não precisa reinventar a roda (como criar um sistema de login do zero).</li>
+                    <li><strong>Padronização:</strong> Como segue uma estrutura fixa, outros desenvolvedores entendem seu código mais rápido.</li>
+                    <li><strong>Segurança:</strong> Grandes frameworks (como o Spring) são testados por milhares de pessoas contra ataques.</li>
+                </ul>
+
+                <div class="analogia">
+                    "A biblioteca é a ferramenta que você usa. O framework é a casa que você decora."
+                </div>
+        </article>
+        </section>
+
+        <section id = "principal">
+            <h1>Principais Frameworks do Ecossistema Java</h1>
+            <p>
+                Agora que você já sabe que um framework é a "estrutura da casa", vamos conhecer os 
+                favoritos dos desenvolvedores para diferentes tipos de construção:
+            </p>
+
+            <h2>Spring Boot: O Rei das APIs</h2>
+            <p>
+                O <strong>Spring Boot</strong> é o framework mais utilizado no mundo corporativo. Ele permite criar 
+                aplicações prontas para produção de forma extremamente rápida. Sua principal vantagem é o 
+                conceito de <em>"Auto-configuration"</em>: o framework configura automaticamente as partes 
+                chatas do projeto para que você foque apenas na lógica.
+            </p>
+            🔗 <strong>Documentação:</strong> <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener">Página Oficial do Spring Boot</a>
+            <div class="analogia">
+                "Se o Java é o idioma, o Spring Boot é o tradutor automático que facilita toda a conversa entre o código e o servidor."
+            </div>
+
+            <h2>Jakarta EE: A Base de Tudo</h2>
+            <p>
+                Antigamente conhecido como Java EE, o <strong>Jakarta EE</strong> é um conjunto de especificações 
+                padronizadas para aplicações empresariais. É a escolha de grandes instituições (como bancos e órgãos públicos) 
+                que precisam de sistemas que durem décadas com alta estabilidade. 
+            </p>
+            🔗 <strong>Especificações:</strong> <a href="https://jakarta.ee/" target="_blank" rel="noopener">Portal Jakarta EE</a>
+                <p></p>
+
+            <h2>Hibernate (JPA): O Mestre dos Dados</h2>
+            <p>
+                Trabalhar com banco de dados manualmente dá muito trabalho. O <strong>Hibernate</strong> resolve isso 
+                através do mapeamento objeto-relacional (ORM). Ele permite que você manipule tabelas do banco de dados 
+                Oracle como se fossem simples objetos Java. 
+            </p>
+            🔗 <strong>Guia do ORM:</strong> <a href="https://hibernate.org/orm/" target="_blank" rel="noopener">Documentação do Hibernate</a>
+            <p></p>
+
+            <h2>Quarkus: O Futuro na Nuvem</h2>
+            <p>
+                Criado para ser "Supersônico e Subatômico", o <strong>Quarkus</strong> é focado em ambientes de 
+                Cloud (Nuvem) e Kubernetes. Ele brilha por ter um tempo de inicialização quase instantâneo 
+                e consumir pouquíssima memória RAM.
+            </p>
+            🔗 <strong>Site do Quarkus:</strong> <a href="https://quarkus.io/" target="_blank" rel="noopener">Quarkus - Supersonic Subatomic Java</a>
+            <p></p>
+
+            <h2>JUnit: Testes Unitários</h2>
+            <p>
+                Imagina que você vai construir um projeto do zero e precisa garantir que 
+                o software nunca falhe. Vai testar manualmente todas às vezes que mudar uma vírgula? 
+                Claro que não! É aqui que entra o <strong>JUnit</strong>.
+            </p>
+            <p>
+                Ele é o framework padrão para <strong>Testes Unitários</strong> em Java. Com ele, você escreve 
+                pequenos códigos que testam as suas funções automaticamente. Se algo quebrar no futuro, 
+                o JUnit vai te avisar imediatamente com uma "barra vermelha", impedindo que o erro chegue ao utilizador final.
+            </p>
+            🔗 <strong>Documentação Oficial:</strong> <a href="https://junit.org/junit5/" target="_blank" rel="noopener">JUnit 5</a>
+            <p></p>
+
+            <ul>
+                <li><strong>Assegura a Qualidade:</strong> Encontra bugs logo no início do desenvolvimento.</li>
+                <li><strong>Refatoração Segura:</strong> Pode mudar o seu código à vontade; se os testes passarem, 
+                sabe que não quebrou nada que já funcionava.</li>
+                <li><strong>Documentação Viva:</strong> Os testes mostram exatamente como cada parte do sistema 
+                deve comportar-se.</li>
+            </ul>
+
+    </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/JP-rocha23" target="_blank">João Pedro Rocha</a></p>
+    </footer>
+    
+</body>
+</html>

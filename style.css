@@ -145,3 +145,71 @@ a:hover {
     letter-spacing: 3px;
 }
 
+/* Estilização das Listas (Vantagens e Desvantagens) */
+ul {
+    list-style-type: none; /* Remove a bolinha padrão */
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0; /* Linha sutil entre itens */
+    font-size: 0.95rem;
+}
+
+ul li strong {
+    color: #000000; 
+}
+
+/* Estilização da Tabela de Comparação */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre bordas */
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden; /* Garante que o border-radius funcione */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #333; /* Fundo escuro para o cabeçalho */
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Efeito "zebrado" nas linhas */
+}
+
+/* Efeito ao passar o mouse na linha da tabela */
+tr:hover {
+    background-color: #fff5f5;
+}
+
+article p {
+    margin-bottom: 30px; 
+    line-height: 1.6;    
+    color: #444;         
+}
+
+.analogia {
+    background-color: #fdf2f2; 
+    border-left: 5px solid #c0392b; 
+    padding: 15px;
+    font-style: italic;
+    margin: 20px 0;
+}
