@@ -1,6 +1,7 @@
 # ☕ Projeto Guia Java - Review HTML & CSS
 
 Este é um projeto de estudo desenvolvido para revisar conceitos fundamentais de **HTML5** e **CSS3**, utilizando a linguagem **Java** como tema central. 
+🔗 **[Acesse o projeto online aqui](https://jp-rocha23.github.io/Site-Java/)**
 
 O projeto foi inspirado nas aulas de HTML5 e CSS3 do [Curso em Vídeo](https://www.cursoemvideo.com/), ministrado pelo professor **Gustavo Guanabara**.
 
@@ -23,10 +24,3 @@ O projeto foi inspirado nas aulas de HTML5 e CSS3 do [Curso em Vídeo](https://w
 2.  **Por que Java?:** Destaque para a JVM, portabilidade (WORA) e segurança.
 3.  **Códigos em Java:** Explicação sobre a verbosidade e o clássico *Hello World*.
 4.  **Por onde aprender:** Recomendação oficial do canal **Curso em Vídeo**.
-
-## 🛠️ Como visualizar
-
-Basta clonar o repositório e abrir o arquivo `index.html` em qualquer navegador:
-
-```bash
-git clone [https://github.com/JP-rocha23/seu-repositorio.git](https://github.com/JP-rocha23/seu-repositorio.git)
