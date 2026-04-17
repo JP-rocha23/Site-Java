@@ -12,6 +12,27 @@
 <body>
     <header id="Cabecalho">
         <p><img src="imagens/java-logo.webp" alt="Java Logo" width="200"></p>
+        <button id = darkmode>Dark Mode</button>
+
+        <script>
+            var darkModeButton = document.getElementById('darkmode');
+            darkModeButton.addEventListener('click', function() {
+                var fundoCabecalho = document.getElementById('Cabecalho');
+                var fundoArtigo = document.getElementsByClassName('principal');
+                if (fundoCabecalho.style.backgroundColor === 'black') {
+                    fundoCabecalho.style.backgroundColor = '#ffffff';
+                    document.body.style.backgroundColor = '#fff';
+                    document.body.style.color = 'black';
+                    fundoArtigo[0].style.backgroundColor = '#f0f2f5';
+                    fundoArtigo[1].style.backgroundColor = '#f0f2f5';
+                } else {
+                    fundoArtigo[0].style.backgroundColor = 'GRAY';
+                    fundoArtigo[1].style.backgroundColor = 'GRAY';
+                    fundoCabecalho.style.backgroundColor = 'black';
+                    document.body.style.backgroundColor = 'black';
+                }
+            });
+        </script>
     
         <nav>
             <a href="index.html">Home</a>
@@ -61,7 +82,7 @@
         </article>
         </section>
 
-        <section id = "principal">
+        <section class = "principal">
             <h1>Principais Frameworks do Ecossistema Java</h1>
             <p>
                 Agora que você já sabe que um framework é a "estrutura da casa", vamos conhecer os 
