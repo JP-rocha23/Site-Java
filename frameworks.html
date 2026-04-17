@@ -12,26 +12,23 @@
 <body>
     <header id="Cabecalho">
         <p><img src="imagens/java-logo.webp" alt="Java Logo" width="200"></p>
-        <button id = darkmode>Dark Mode</button>
+        <button id = "darkModeButton">🌙</button>
 
         <script>
-            var darkModeButton = document.getElementById('darkmode');
+            var darkModeButton = document.getElementById('darkModeButton');
             darkModeButton.addEventListener('click', function() {
-                var fundoCabecalho = document.getElementById('Cabecalho');
-                var fundoArtigo = document.getElementsByClassName('principal');
-                if (fundoCabecalho.style.backgroundColor === 'black') {
-                    fundoCabecalho.style.backgroundColor = '#ffffff';
-                    document.body.style.backgroundColor = '#fff';
-                    document.body.style.color = 'black';
-                    fundoArtigo[0].style.backgroundColor = '#f0f2f5';
-                    fundoArtigo[1].style.backgroundColor = '#f0f2f5';
-                } else {
-                    fundoArtigo[0].style.backgroundColor = 'GRAY';
-                    fundoArtigo[1].style.backgroundColor = 'GRAY';
-                    fundoCabecalho.style.backgroundColor = 'black';
-                    document.body.style.backgroundColor = 'black';
-                }
-            });
+            // Alterna a classe 'dark-mode' no corpo do site
+            document.body.classList.toggle('dark-mode');
+
+            // Verifica se a classe está ativa para mudar o ícone
+            if (document.body.classList.contains('dark-mode')) {
+                darkModeButton.innerHTML = '☀️';
+            } else {
+                darkModeButton.innerHTML = '🌙';
+            }
+            
+        });
+
         </script>
     
         <nav>
