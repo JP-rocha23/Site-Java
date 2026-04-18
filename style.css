@@ -234,7 +234,9 @@ body.dark-mode a:hover { color: #e11d21; }
 body.dark-mode #Vídeo iframe { border: 2px solid #e11d21; }
 body.dark-mode #codigo { background-color: #1E1E1E; color: #E0E0E0; border-left-color: #e11d21; }
 body.dark-mode .analogia { background-color: #2c2c2c; border-left-color: #e11d21; color: #E0E0E0; } 
-body.dark-mode table { background-color: #1E1E1E; }
+body.dark-mode table { background-color: #1E1E1E; color: #E0E0E0; }
+body.dark-mode th { background-color: #333; color: #E0E0E0; }
+body.dark-mode td { color: #E0E0E0; background-color: #1E1E1E; color: #E0E0E0; }
 body.dark-mode th { background-color: #333; color: #E0E0E0; }
 body.dark-mode td { color: #E0E0E0; }   
 body.dark-mode p { color: #E0E0E0; }

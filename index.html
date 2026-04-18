@@ -12,6 +12,24 @@
 
     <header id="Cabecalho">
         <p><img src="imagens/java-logo.webp" alt="Java Logo" width="200"></p>
+        <button id = "darkModeButton">🌙</button>
+
+        <script>
+            var darkModeButton = document.getElementById('darkModeButton');
+            darkModeButton.addEventListener('click', function() {
+            // Alterna a classe 'dark-mode' no corpo do site
+            document.body.classList.toggle('dark-mode');
+
+            // Verifica se a classe está ativa para mudar o ícone
+            if (document.body.classList.contains('dark-mode')) {
+                darkModeButton.innerHTML = '☀️';
+            } else {
+                darkModeButton.innerHTML = '🌙';
+            }
+            
+        });
+
+        </script>
     
         <nav>
             <a href="index.html">Home</a>
@@ -65,7 +83,7 @@
             </article>
         </section>
         
-        <section>
+        <section class = "principal">
             <article>
                 <h1>Por onde aprender?</h1>
                 <p>Se você está buscando uma base sólida e não quer apenas copiar código sem entender o que está acontecendo nos bastidores, o canal Curso em Vídeo é o seu destino obrigatório. Com uma didática lendária, o professor <strong>Gustavo Guanabara</strong> desmistifica o Java desde os seus conceitos mais fundamentais até a complexidade da Orientação a Objetos. O curso é famoso por 'pegar na mão' do aluno, explicando detalhadamente como configurar o ambiente, como a JVM processa cada linha e, principalmente, como pensar como um programador. É o ponto de partida ideal para quem quer dominar a linguagem que move o mercado, com a garantia de um conteúdo gratuito, em português e de altíssima qualidade. Dê o play e prepare-se para se tornar um verdadeiro 'Gafanhoto' do Java!</p>
